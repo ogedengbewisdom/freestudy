@@ -99,8 +99,8 @@ export default function Home() {
                 Have Questions?
               </h2>
               <p className="mt-3 tracking-[0.32px] md:text-lg font-jakarta">
-                If you can't find what you're looking for, feel free to reach
-                out!
+                If you can&apos;t find what you&apos;re looking for, feel free
+                to reach out!
               </p>
             </div>
 
@@ -111,7 +111,7 @@ export default function Home() {
 
               <div className="text-center mt-12">
                 <p className="text-gray-600 mb-4">
-                  Still have questions? We're here to help!
+                  Still have questions? We&apos;re here to help!
                 </p>
                 <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200">
                   Contact Support
@@ -126,7 +126,7 @@ export default function Home() {
                   " font-jakarta mb-3 text-left text-xs font-semibold uppercase tracking-[1.44px] md:mb-8 !text-white"
                 }
               >
-                LET'S TRY!
+                LET&apos;S TRY!
               </p>
               <h2 className="text-left font-jakarta text-[32px] font-normal leading-tight tracking-[-1.8px] text-white lg:text-[60px] lg:leading-tight">
                 Start creating magic today with a{" "}

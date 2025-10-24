@@ -1,4 +1,3 @@
-import SearchSidebar from "@/screen/blog/searchSidebar";
 import Header from "@/screen/home/header";
 import Aside from "@/screen/scholarship/Aside";
 import type { Metadata } from "next";

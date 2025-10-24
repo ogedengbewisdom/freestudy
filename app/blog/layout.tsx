@@ -1,7 +1,6 @@
 import Footer from "@/component/footer";
 import Header from "@/screen/blog/header";
 import SearchSidebar from "@/screen/blog/searchSidebar";
-import { MenuIcon } from "lucide-react";
 import React from "react";
 
 import type { Metadata } from "next";

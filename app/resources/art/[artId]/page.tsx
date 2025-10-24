@@ -1,9 +1,5 @@
-import { Button } from "@/component/button";
 import BookDetails from "@/screen/resources/bookDetails";
 import { bookByID } from "@/utils/libs";
-import { Facebook, Instagram, X } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 
 const ArtDetailPage = async ({ params }: { params: { artId: string } }) => {
   const { artId } = await params;
