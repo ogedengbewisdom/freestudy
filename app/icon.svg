@@ -1,0 +1,90 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Professional gradient -->
+    <linearGradient id="professionalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E40AF"/>
+      <stop offset="50%" style="stop-color:#3B82F6"/>
+      <stop offset="100%" style="stop-color:#1D4ED8"/>
+    </linearGradient>
+    
+    <!-- Gold accent -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FCD34D"/>
+      <stop offset="100%" style="stop-color:#F59E0B"/>
+    </linearGradient>
+    
+    <!-- Academic book gradient -->
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#F8FAFC"/>
+    </linearGradient>
+    
+    <!-- Sophisticated shadow -->
+    <filter id="academicShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Main background - professional rounded square -->
+  <rect x="15" y="15" width="170" height="170" rx="32" ry="32" 
+        fill="url(#professionalGrad)" filter="url(#academicShadow)"/>
+  
+  <!-- Academic thesis/research papers stack -->
+  <g transform="translate(100,100)">
+    <!-- Back paper -->
+    <rect x="-35" y="-25" width="70" height="50" rx="3" fill="#E2E8F0" transform="rotate(-2)"/>
+    
+    <!-- Middle paper -->
+    <rect x="-35" y="-25" width="70" height="50" rx="3" fill="#F1F5F9" transform="rotate(1)"/>
+    
+    <!-- Front paper -->
+    <rect x="-35" y="-25" width="70" height="50" rx="3" fill="url(#bookGrad)" 
+          stroke="#CBD5E1" stroke-width="1"/>
+    
+    <!-- Academic text lines -->
+    <line x1="-25" y1="-15" x2="25" y2="-15" stroke="#64748B" stroke-width="1.5"/>
+    <line x1="-25" y1="-8" x2="20" y2="-8" stroke="#64748B" stroke-width="1"/>
+    <line x1="-25" y1="-1" x2="25" y2="-1" stroke="#64748B" stroke-width="1"/>
+    <line x1="-25" y1="6" x2="15" y2="6" stroke="#64748B" stroke-width="1"/>
+    <line x1="-25" y1="13" x2="25" y2="13" stroke="#64748B" stroke-width="1"/>
+  </g>
+  
+  <!-- Academic cap/mortarboard - more refined -->
+  <g transform="translate(100,65)">
+    <!-- Cap base -->
+    <ellipse cx="0" cy="0" rx="32" ry="8" fill="#1F2937"/>
+    <rect x="-28" y="-4" width="56" height="8" fill="#1F2937"/>
+    
+    <!-- Gold tassel -->
+    <circle cx="28" cy="-2" r="2.5" fill="url(#goldGrad)"/>
+    <path d="M28,1 Q32,8 30,15 Q28,12 26,15 Q28,8 28,1" fill="url(#goldGrad)"/>
+  </g>
+  
+  <!-- Molecular/academic symbol -->
+  <g transform="translate(65,135)">
+    <circle r="4" fill="#60A5FA" opacity="0.8"/>
+    <circle cx="15" cy="8" r="3" fill="#60A5FA" opacity="0.6"/>
+    <circle cx="-10" cy="12" r="3.5" fill="#60A5FA" opacity="0.7"/>
+    <line x1="0" y1="0" x2="15" y2="8" stroke="#60A5FA" stroke-width="1.5" opacity="0.8"/>
+    <line x1="0" y1="0" x2="-10" y2="12" stroke="#60A5FA" stroke-width="1.5" opacity="0.8"/>
+  </g>
+  
+  <!-- Infinity symbol (unlimited learning) -->
+  <g transform="translate(135,135)">
+    <path d="M-8,0 C-8,-6 -2,-6 2,0 C6,6 12,6 12,0 C12,-6 6,-6 2,0 C-2,6 -8,6 -8,0" 
+          fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.7"/>
+  </g>
+  
+  <!-- "FREE" badge - more sophisticated -->
+  <g transform="translate(155,45)">
+    <rect x="-18" y="-8" width="36" height="16" rx="8" fill="#059669" 
+          stroke="#FFFFFF" stroke-width="2"/>
+    <text x="0" y="1" text-anchor="middle" fill="white" 
+          font-family="Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="0.5px">FREE</text>
+  </g>
+  
+  <!-- Subtle academic accents -->
+  <circle cx="45" cy="45" r="1.5" fill="#FFFFFF" opacity="0.4"/>
+  <circle cx="155" cy="155" r="2" fill="#FFFFFF" opacity="0.3"/>
+  <rect x="40" y="150" width="4" height="4" fill="#FFFFFF" opacity="0.2" transform="rotate(45 42 152)"/>
+</svg>
