@@ -1,7 +1,7 @@
 import BookDetails from "@/screen/resources/bookDetails";
 import { bookByID } from "@/utils/libs";
 
-const LawDetailPage = async ({ params }: { params: { lawId: string } }) => {
+const LawDetailPage = async ({ params }: { params: Promise<{ lawId: string }> }) => {
   const { lawId } = await params;
   const law = bookByID(lawId);
   if (!law) {

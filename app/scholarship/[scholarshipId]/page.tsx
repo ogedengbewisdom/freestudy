@@ -3,9 +3,9 @@ import { scholarshipByID } from "@/utils/libs";
 import { Clock } from "lucide-react";
 
 interface ScholarshipProps {
-  params: {
+  params: Promise<{
     scholarshipId: string;
-  };
+  }>;
 }
 
 const ScholarshipDetailPage = async ({ params }: ScholarshipProps) => {

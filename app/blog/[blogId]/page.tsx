@@ -2,12 +2,12 @@ import BlogDetail from "@/screen/blog/BlogDetail";
 import { blogDetailFunction } from "@/utils/libs";
 
 interface BlogDetailsPageProps {
-  params: {
+  params: Promise<{
     blogId: string;
-  };
+  }>;
 }
-const BlogDetailsPage = ({ params }: BlogDetailsPageProps) => {
-  const { blogId } = params;
+const BlogDetailsPage = async ({ params }: BlogDetailsPageProps) => {
+  const { blogId } = await params;
   const post = blogDetailFunction(blogId);
 
   if (!post) {

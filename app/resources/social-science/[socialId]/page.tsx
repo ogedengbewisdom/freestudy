@@ -4,7 +4,7 @@ import { bookByID } from "@/utils/libs";
 const SocialScienceDetailPage = async ({
   params,
 }: {
-  params: { socialId: string };
+  params: Promise<{ socialId: string }>;
 }) => {
   const { socialId } = await params;
   const social = bookByID(socialId);

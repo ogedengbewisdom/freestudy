@@ -4,7 +4,7 @@ import { bookByID } from "@/utils/libs";
 const PhysicalScienceDetailPage = async ({
   params,
 }: {
-  params: { physicalId: string };
+  params: Promise<{ physicalId: string }>;
 }) => {
   const { physicalId } = await params;
   const physical = bookByID(physicalId);
