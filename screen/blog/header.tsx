@@ -3,7 +3,6 @@ import Link from "next/link";
 import Icons from "@/public/freestudy.svg";
 import { Button } from "@/component/button";
 import googleIcon from "@/public/google.82c899b0.svg";
-import whiteArrow from "@/public/white-arrow.dd1ae13e.svg";
 import { ArrowRightIcon, MenuIcon } from "lucide-react";
 
 const Header = () => {

@@ -43,7 +43,7 @@ const AddBlogButton = () => {
         className=" rounded-3xl bg-gray-200 p-2 w-full cursor-pointer"
         onClick={onOpen}
       >
-        <p className="text-sm font-jakarta font-medium leading-[1.7]">
+        <p className="text-xs md:text-sm  font-jakarta font-medium leading-[1.7]">
           Share something interesting @your_username
         </p>
       </div>

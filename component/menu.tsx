@@ -78,7 +78,7 @@ const Menu = ({ navItems }: NavItemsProps) => {
                 </li>
               ))}
               <li>
-                <ResourceDropdown className="px-0" />
+                <ResourceDropdown className="px-0" onClick={onClose} />
               </li>
             </ul>
             <div className="flex flex-col items-start gap-5 w-full">
@@ -108,9 +108,9 @@ const Menu = ({ navItems }: NavItemsProps) => {
       </div>
       <button
         onClick={toggleMenu}
-        className="lg:hidden p-2 border border-[#e5e7eb] rounded-full"
+        className="flex items-center justify-center border-none outline-none lg:hidden"
       >
-        <MenuIcon className="w-6 h-6 text-[#171717] font-semibold" />
+        <MenuIcon className="w-5 h-5 text-[#171717] font-semibold" />
       </button>
     </>
   );

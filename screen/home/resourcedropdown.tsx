@@ -16,7 +16,13 @@ const resourceItems = [
   // { label: "Other", href: "/resources/other" },
 ];
 
-const ResourceDropdown = ({ className }: { className?: string }) => {
+const ResourceDropdown = ({
+  className,
+  onClick,
+}: {
+  className?: string;
+  onClick?: () => void;
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const onOpen = () => {
@@ -57,6 +63,7 @@ const ResourceDropdown = ({ className }: { className?: string }) => {
           <Link
             key={item.label}
             href={item.href}
+            onClick={onClick}
             className="block px-4 py-2 text-[0.85rem] font-[500] text-[#222] hover:bg-[#f3f4f6] transition-all duration-200"
           >
             {item.label}
