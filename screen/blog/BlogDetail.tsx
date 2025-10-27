@@ -46,7 +46,7 @@ const BlogDetail = ({ post }: BlogDetailProps) => {
             />
           </div>
         )}
-        <h1 className=" text-2xl md:text-3xl xl:text-4xl font-bold text-gray-800 mt-6">
+        <h1 className=" text-lg md:text-3xl xl:text-4xl font-bold text-gray-800 mt-6">
           {post.title}
         </h1>
 
@@ -75,7 +75,7 @@ const BlogDetail = ({ post }: BlogDetailProps) => {
           </div>
         </div>
 
-        <div className="text-gray-700 leading-relaxed text-md lg:text-lg space-y-5 font-jakarta">
+        <div className="text-gray-700 leading-relaxed text-sm lg:text-lg space-y-5 font-jakarta">
           {post.content.map((paragraph, index) => (
             <p key={paragraph}>{paragraph}</p>
           ))}

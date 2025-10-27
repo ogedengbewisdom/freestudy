@@ -53,7 +53,7 @@ const BlogCard = ({ post, onReadMore, onLike }: BlogCardProps) => {
     >
       <div className="flex flex-col gap-2 h-full justify-between">
         <div className="flex flex-col gap-2">
-          <h2 className="text-xl font-bold text-gray-800 mb-4 leading-tight font-jakarta">
+          <h2 className=" text-md md:text-xl font-bold text-gray-800 mb-4 leading-tight font-jakarta">
             {post.title}
           </h2>
 
@@ -82,7 +82,9 @@ const BlogCard = ({ post, onReadMore, onLike }: BlogCardProps) => {
             />
           </div>
         ) : (
-          <p className="text-gray-600 leading-relaxed mb-5">{post.excerpt}</p>
+          <p className=" text-sm text-gray-600 leading-relaxed mb-5">
+            {post.excerpt}
+          </p>
         )}
 
         <div className="flex justify-between items-center pt-4 border-t border-gray-100">

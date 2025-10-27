@@ -40,10 +40,10 @@ const AddBlogButton = () => {
         <User2 className="w-6 h-6 text-[#353a44]" />
       </div>
       <div
-        className=" rounded-3xl bg-gray-200 p-2 w-full cursor-pointer"
+        className=" rounded-3xl bg-gray-200 p-2 w-full cursor-pointer flex items-center justify-center"
         onClick={onOpen}
       >
-        <p className="text-xs md:text-sm  font-jakarta font-medium leading-[1.7]">
+        <p className="text-[10px] md:text-sm font-jakarta font-medium leading-[1.7]">
           Share something interesting @your_username
         </p>
       </div>
